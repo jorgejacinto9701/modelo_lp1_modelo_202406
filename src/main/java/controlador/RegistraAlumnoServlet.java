@@ -3,6 +3,7 @@ package controlador;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Date;
+import java.sql.Timestamp;
 
 import com.google.gson.Gson;
 
@@ -36,8 +37,8 @@ public class RegistraAlumnoServlet extends HttpServlet {
         objAlumno.setDni(dni);
         objAlumno.setCorreo(con);
         objAlumno.setFechaNacimiento(Date.valueOf(fecNac));
-        objAlumno.setFechaRegistro(new Date(System.currentTimeMillis()));
-        objAlumno.setFechaActualizacion(new Date(System.currentTimeMillis()));
+        objAlumno.setFechaRegistro(new Timestamp(System.currentTimeMillis()));
+        objAlumno.setFechaActualizacion(new Timestamp(System.currentTimeMillis()));
         objAlumno.setEstado(1);
         
         Pais  objPais = new Pais();

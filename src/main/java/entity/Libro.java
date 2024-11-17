@@ -1,6 +1,6 @@
 package entity;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,8 +14,8 @@ public class Libro {
 	private int anio;
 	private String serie;
 	private String tema;
-	private Date fechaRegistro;
-	private Date fechaActualizacion;
+	private Timestamp fechaRegistro;
+	private Timestamp fechaActualizacion;
 	private int estado;
 	private Categoria categoria;
 

@@ -28,8 +28,8 @@ public class ModelAlumno {
 			pstm.setString(4, obj.getDni());
 			pstm.setString(5, obj.getCorreo());
 			pstm.setDate(6, obj.getFechaNacimiento());
-			pstm.setDate(7, obj.getFechaRegistro());
-			pstm.setDate(8, obj.getFechaActualizacion());
+			pstm.setTimestamp(7, obj.getFechaRegistro());
+			pstm.setTimestamp(8, obj.getFechaActualizacion());
 			pstm.setInt(9, obj.getEstado());
 			pstm.setInt(10, obj.getPais().getIdPais());
 

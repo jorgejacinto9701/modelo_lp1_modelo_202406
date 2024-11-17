@@ -1,6 +1,7 @@
 package entity;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,13 +13,13 @@ public class Editorial {
 	private int idEditorial;
 	private String razonSocial;
 	private String direccion;
-	private int telefono;
+	private String telefono;
 	private String ruc;
 	private Date fechaCreacion;
-	private Date fechaRegistro;
-	private Date fechaActualizacion;
+	private Timestamp fechaRegistro;
+	private Timestamp fechaActualizacion;
 	private int estado;
 	private Pais pais;
-	private String fechaFormateada;
-
+	private String fechaFormateada;	
+	
 }

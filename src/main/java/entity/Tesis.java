@@ -1,6 +1,7 @@
 package entity;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,9 +14,9 @@ public class Tesis {
 	private String titulo;
 	private String tema;
 	private Date fechaCreacion;
-	private Date fechaRegistro;
+	private Timestamp fechaRegistro;
+	private Timestamp fechaActualizacion;
 	private int estado;
 	private Alumno alumno;
-
 	
 }

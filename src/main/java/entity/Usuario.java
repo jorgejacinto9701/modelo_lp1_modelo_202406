@@ -1,6 +1,7 @@
 package entity;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -16,7 +17,7 @@ public class Usuario {
 	private String login;
 	private String password;
 	private String correo;
-	private Date fechaRegistro;
+	private Timestamp fechaRegistro;
 	private Date fechaNacimiento;
 
 	public String getNombreCompleto() {

@@ -17,6 +17,7 @@ public class Proveedor {
 	private String contacto;
 	private int estado;
 	private Date fechaRegistro;
+	private Date fechaActualizacion;
 	private Pais pais;
 
 }
